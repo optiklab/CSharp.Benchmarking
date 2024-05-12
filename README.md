@@ -3,7 +3,7 @@ Benchmarking same program on .NET 5, .NET 6, .NET 7, .NET 8 to find interesting 
 
 # Observations found
 
-- .NET team is using SIMD optimizations in .NET 7, so the same LINQ code works WAY FASTER than on .NET 6
+- .NET team is using SIMD optimizations in .NET 7 and .NET 8, so the same LINQ code works WAY FASTER than on .NET 7 and even MORE FASTER on .NET 8
 
 # .NET 6
 BenchmarkDotNet v0.13.12, Windows 11 (10.0.22631.3447/23H2/2023Update/SunValley3)

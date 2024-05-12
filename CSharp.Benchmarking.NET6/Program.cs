@@ -19,7 +19,6 @@ namespace CSharp.Benchmarking.NET6
             11th Gen Intel Core i9-11900H 2.50GHz, 1 CPU, 16 logical and 8 physical cores
             .NET SDK 8.0.101
               [Host]   : .NET 6.0.29 (6.0.2924.17105), X64 RyuJIT AVX2
-              ShortRun : .NET 6.0.29 (6.0.2924.17105), X64 RyuJIT AVX2
 
             Job=MediumRun-.NET 6.0-RyuJit-X64  Jit=RyuJit  Platform=X64
             Runtime=.NET 6.0  IterationCount=15  LaunchCount=2

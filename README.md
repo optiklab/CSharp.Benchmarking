@@ -3,10 +3,10 @@ Benchmarking same program on .NET 5, .NET 6, .NET 7, .NET 8 to find interesting 
 
 # Tests
 
-- IntegerSumCalculator shows how to optimize simple Sum counter knowning concepts of CPU pipelining (conveyor), unsafe code and even SIMD coding
-- IntegerConditionalCountCalculator shows how to optimize simple Counter with understanding of concept of CPU branch predictions and even SIMD coding
-- StringsBuilderTest shows how StringBuilder helps to significantly optimize strings concatenation
-- FibonacciRecursiveTest shows how amount of recoursive calls grows exponentially with N
+- *IntegerSumCalculator* shows how to optimize simple Sum counter knowning concepts of CPU pipelining (conveyor), unsafe code and even SIMD coding
+- *IntegerConditionalCountCalculator* shows how to optimize simple Counter with understanding of concept of CPU branch predictions and even SIMD coding
+- *StringsBuilderTest* shows how StringBuilder helps to significantly optimize strings concatenation
+- *FibonacciRecursiveTest* shows how amount of recoursive calls grows exponentially with N
 
 # Observations found
 

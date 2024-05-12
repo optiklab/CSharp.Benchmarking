@@ -1,6 +1,13 @@
 # CSharp.Benchmarking
 Benchmarking same program on .NET 5, .NET 6, .NET 7, .NET 8 to find interesting observations in performance optimizations made on compiler level
 
+# Tests
+
+- IntegerSumCalculator shows how to optimize simple Sum counter knowning concepts of CPU pipelining (conveyor), unsafe code and even SIMD coding
+- IntegerConditionalCountCalculator shows how to optimize simple Counter with understanding of concept of CPU branch predictions and even SIMD coding
+- StringsBuilderTest shows how StringBuilder helps to significantly optimize strings concatenation
+- FibonacciRecursiveTest shows how amount of recoursive calls grows exponentially with N
+
 # Observations found
 
 - .NET team is using SIMD optimizations in .NET 7 and .NET 8, so the same LINQ code works WAY FASTER than on .NET 7 and even MORE FASTER on .NET 8

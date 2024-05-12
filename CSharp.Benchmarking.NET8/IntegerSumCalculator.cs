@@ -9,6 +9,36 @@ using System.Runtime.InteropServices;
 namespace CSharp.Benchmarking.NET8
 {
     /*
+    // * Summary *
+
+    BenchmarkDotNet v0.13.12, Windows 11 (10.0.22631.3447/23H2/2023Update/SunValley3)
+    11th Gen Intel Core i9-11900H 2.50GHz, 1 CPU, 16 logical and 8 physical cores
+    .NET SDK 8.0.101
+        [Host]                        : .NET 7.0.18 (7.0.1824.16914), X64 RyuJIT AVX2
+        MediumRun-.NET 8.0-RyuJit-X64 : .NET 8.0.1 (8.0.123.58001), X64 RyuJIT AVX-512F+CD+BW+DQ+VL+VBMI
+
+    Job=MediumRun-.NET 8.0-RyuJit-X64  Jit=RyuJit  Platform=X64
+    Runtime=.NET 8.0  IterationCount=15  LaunchCount=2
+    WarmupCount=10
+
+    | Method        | Mean      | Error    | StdDev   | Min       | Code Size |
+    |-------------- |----------:|---------:|---------:|----------:|----------:|
+    | EnumerableSum |  81.63 ns | 1.983 ns | 2.780 ns |  78.11 ns |     869 B |
+    | SumNative     | 344.24 ns | 1.874 ns | 2.747 ns | 340.18 ns |      68 B |
+    | SumSIMD       |  54.17 ns | 0.417 ns | 0.584 ns |  53.21 ns |     136 B |
+
+    // * Hints *
+    Outliers
+        IntegerSumCalculator.EnumerableSum: MediumRun-.NET 8.0-RyuJit-X64 -> 3 outliers were removed (90.65 ns..93.43 ns)
+        IntegerSumCalculator.SumSIMD: MediumRun-.NET 8.0-RyuJit-X64       -> 2 outliers were removed (57.26 ns, 57.31 ns)
+
+    // * Legends *
+        Mean      : Arithmetic mean of all measurements
+        Error     : Half of 99.9% confidence interval
+        StdDev    : Standard deviation of all measurements
+        Min       : Minimum
+        Code Size : Native code size of the disassembled method(s)
+        1 ns      : 1 Nanosecond (0.000000001 sec)
      */
 
     [MinColumn]

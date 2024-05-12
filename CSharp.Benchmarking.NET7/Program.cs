@@ -21,12 +21,16 @@ namespace CSharp.Benchmarking.NET7
               [Host]   : .NET 7.0.18 (7.0.1824.16914), X64 RyuJIT AVX2
               ShortRun : .NET 7.0.18 (7.0.1824.16914), X64 RyuJIT AVX2
 
+            Job=MediumRun-.NET 7.0-RyuJit-X64  Jit=RyuJit  Platform=X64
+            Runtime=.NET 7.0  IterationCount=15  LaunchCount=2
             | Method        | Mean      | Error     | StdDev    | Min       | Code Size |
             |-------------- |----------:|----------:|----------:|----------:|----------:|
             | EnumerableSum | 354.55 ns | 14.566 ns | 21.350 ns | 335.23 ns |     315 B |
             | SumNative     | 351.93 ns |  3.594 ns |  5.155 ns | 345.58 ns |      68 B |
             | SumSIMD       |  60.64 ns |  0.512 ns |  0.751 ns |  59.34 ns |     135 B |
 
+            Job=ShortRun-.NET 7.0-RyuJit-X64  Jit=RyuJit  Platform=X64
+            Runtime=.NET 7.0  IterationCount=3  LaunchCount=1
             | Method                               | Mean         | Error        | StdDev       | BranchMispredictions/Op |
             |------------------------------------- |-------------:|-------------:|-------------:|------------------------:|
             | GetProblemsCount                     |  9,320.59 ns |  6,020.56 ns |   330.007 ns |                     490 |

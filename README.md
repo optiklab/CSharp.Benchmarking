@@ -1,5 +1,7 @@
 # CSharp.Benchmarking
-Benchmarking same program on .NET 5, .NET 6, .NET 7, .NET 8 to find interesting observations in performance optimizations made on compiler level
+
+Benchmarking same program on .NET 5, .NET 6, .NET 7, .NET 8 to find interesting observations in performance optimizations made on compiler level.
+This repo also includes some examples of how to benchmark CPU usage for multithreaded applications and using Windows PDH API (aka Performance Counters API).
 
 # Tests
 
